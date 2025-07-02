@@ -1,0 +1,29 @@
+@mixin button-colors {
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+@mixin titolo{
+font-size: large;
+font-weight: 600;
+color: rgb(255, 81, 0);
+  border-radius: 5;
+    box-shadow:     inset 0 -3em 3em rgb(0 200 0 / 30%),
+    
+    0.3em 0.3em 1em rgb(200 0 0 / 60%)
+}
+h2{
+@include titolo;
+
+
+}
+@mixin floating{
+  border-radius: 5;
+    box-shadow:     inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%)
+} 
+
+.hero{
+@include floating;
+
+}
